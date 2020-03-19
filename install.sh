@@ -10,6 +10,15 @@ sudo apt-get install curl zsh htop
 sudo apt-get install keepassxc
 sudo apt-get install gnome-screensaver
 
+# Install firefox; TODO plugins (uBlock origin)
+sudo apt-get install firefox
+
+# Bundle and prepare plugins for vim
+sudo apt-get install bundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/vim/bundle/Vundle.vim
+sudo apt-get install exuberant-ctags
+sudo apt-get install cscope
+
 # Install other window managers
 sudo apt-get install awesome i3
 sudo apt-get install pavucontrol blueman
@@ -51,5 +60,3 @@ git config --glboal push.default simple
 # ssh-keygen -t rsa -b 4096 # Optional name of file -f filename
 # gedit .ssh/id_rsa.pub (to copy on browser)
 # ssh-agent bash -c 'ssh-add /folder/filename; git clone ...'
-
-# Todo: install firefox with plugins (uBlock origin)
